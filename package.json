@@ -1,0 +1,29 @@
+{
+  "name": "@itsarisid/alphabet-sdk",
+  "author": {"name": "Sajid Khan"},
+  "version": "1.0.0",
+  "description": "Auto-generated TypeScript SDK for Alphabet API v1",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist", "README.md"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itsarisid/baisa-tibba"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": ["alphabet", "api", "sdk", "typescript"],
+  "license": "MIT",
+  "peerDependencies": {
+    "axios": ">=1.0.0"
+  },
+  "devDependencies": {
+    "axios": "^1.7.2",
+    "tsup": "^8.1.0",
+    "typescript": "^5.4.5"
+  }
+}
